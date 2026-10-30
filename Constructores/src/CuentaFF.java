@@ -25,6 +25,15 @@ public class CuentaFF {
         this.id=id;
         this.activo=activo;
     }
+    public void radiografia(){
+        String reporte= """
+                Id: %s
+                Nombre: %s
+                Email: %s
+                Ativa: %b
+                """;
+        System.out.println(reporte.formatted(this.id,this.nombre,this.email,this.activo));
+    }
 
 
 
